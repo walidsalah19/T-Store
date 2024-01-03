@@ -34,7 +34,7 @@ dependencies:
   progress_dialog_null_safe: ^1.0.7
   fluttertoast: ^8.2.2
   equatable: ^2.0.0
-
+  flutter_native_splash: ^2.2.3
 
 dev_dependencies:
   flutter_test:
