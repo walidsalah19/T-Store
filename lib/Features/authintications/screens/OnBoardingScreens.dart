@@ -3,6 +3,7 @@ import 'package:t_store/utils/Helper/HelperFunction.dart';
 import 'package:t_store/utils/constants/AppTexts.dart';
 import 'package:t_store/utils/constants/Imeges.dart';
 import 'package:t_store/utils/constants/Sizes.dart';
+import 'package:t_store/utils/device/AppDeviceUtils.dart';
 
 class OnBoardingScreens extends StatelessWidget {
   const OnBoardingScreens({super.key});
@@ -28,9 +29,27 @@ class OnBoardingScreens extends StatelessWidget {
                   subTitle: AppText.onBoardingSubTitle3),
             ],
           ),
+          OnBoardingSkip() 
         ],
       ),
     );
+  }
+}
+
+class OnBoardingSkip extends StatelessWidget {
+  const OnBoardingSkip({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Positioned(
+      top: AppDeviceUtils.getAppBarHeight(),
+        right: AppSizes.defaultSpace,
+        child: TextButton(
+      onPressed: () {},
+      child: const Text("Skip"),
+    ));
   }
 }
 
