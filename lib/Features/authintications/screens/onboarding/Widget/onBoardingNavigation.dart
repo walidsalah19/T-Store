@@ -1,6 +1,6 @@
-
 import 'package:flutter/cupertino.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:t_store/Features/authintications/controllers/OnBoardingController.dart';
 import 'package:t_store/utils/Helper/HelperFunction.dart';
 import 'package:t_store/utils/constants/AppColors.dart';
 
@@ -11,16 +11,20 @@ class OnBoardingNavigation extends StatelessWidget {
   OnBoardingNavigation({
     super.key,
   });
+
   @override
   Widget build(BuildContext context) {
-    bool dark =HelperFunction.isDark(context);
+    final controller = OnBoardingController.instans;
+    bool dark = HelperFunction.isDark(context);
     return Positioned(
-      bottom: AppDeviceUtils.getBottomSheetHieght(),
+      bottom: AppDeviceUtils.getBottomSheetHieght() + 20,
       left: AppSizes.defaultSpace,
       child: SmoothPageIndicator(
-        effect:ExpandingDotsEffect(
-            activeDotColor:dark ? AppColors.dark : AppColors.light, dotHeight: 6),
-        controller: PageController(),
+        effect: ExpandingDotsEffect(
+            activeDotColor: dark ? AppColors.light : AppColors.dark,
+            dotHeight: 6),
+        controller: controller.pageController,
+        onDotClicked: controller.dotNavigatorClick,
         count: 3,
       ),
     );

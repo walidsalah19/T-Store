@@ -1,24 +1,25 @@
-import 'package:date_picker_timeline/extra/color.dart';
 import 'package:flutter/material.dart';
-import 'package:smooth_page_indicator/smooth_page_indicator.dart';
+import 'package:get/get.dart';
+import 'package:t_store/Features/authintications/controllers/OnBoardingController.dart';
 import 'package:t_store/Features/authintications/screens/onboarding/Widget/onBoardingNavigation.dart';
 import 'package:t_store/utils/constants/AppTexts.dart';
 import 'package:t_store/utils/constants/Imeges.dart';
-import 'package:t_store/utils/constants/Sizes.dart';
-import 'package:t_store/utils/device/AppDeviceUtils.dart';
 
 import 'Widget/OnBoardingSkip.dart';
+import 'Widget/OnboardingNext.dart';
 import 'Widget/onBoardingPage.dart';
 
 class OnBoardingScreens extends StatelessWidget {
   const OnBoardingScreens({super.key});
-
   @override
   Widget build(BuildContext context) {
+    final controller = Get.put(OnBoardingController());
     return Scaffold(
       body: Stack(
         children: [
           PageView(
+            controller: controller.pageController,
+            onPageChanged: controller.updatePageIndicator,
             children: const [
               onBoardingPage(
                   image: Images.onBoardingImage1,
@@ -35,10 +36,10 @@ class OnBoardingScreens extends StatelessWidget {
             ],
           ),
           OnBoardingSkip(),
-          OnBoardingNavigation(), // PageController
+          OnBoardingNavigation(),
+          OnboardingNext() // PageController
         ],
       ),
     );
   }
 }
-
