@@ -11,7 +11,7 @@ class OnBoardingController extends GetxController {
 
   void dotNavigatorClick(index) {
     currentPageIndex.value=index;
-    pageController.jumpTo(index);
+    pageController.jumpToPage(index);
   }
 
   void nextPage() {
@@ -19,13 +19,13 @@ class OnBoardingController extends GetxController {
       {
 
       }else{
-      double page=currentPageIndex.value+1;
-      pageController.jumpTo(page);
+      int page=currentPageIndex.value+1;
+      pageController.jumpToPage(page);
     }
   }
 
   void skipPages() {
     currentPageIndex.value=2;
-    pageController.jumpTo(2);
+    pageController.jumpToPage(2);
   }
 }
