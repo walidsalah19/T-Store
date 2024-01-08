@@ -12,4 +12,10 @@ class AppText
   static const onBoardingSubTitle2="For Seamless Transactions, Choose Your Payment Method";
   static const onBoardingSubTitle3="From our DoorStep to your";
 
+  //Login
+  static const loginTitle="Choose your product";
+  static const loginTitle2="Choose your product";
+
+
+
 }
