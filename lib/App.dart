@@ -3,7 +3,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:t_store/Features/authintications/screens/OnBoardingScreens.dart';
+import 'package:t_store/Features/authintications/screens/onboarding/OnBoardingScreens.dart';
 import 'package:t_store/utils/themes/AppThemes.dart';
 
 class App extends StatelessWidget
