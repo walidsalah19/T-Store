@@ -53,7 +53,7 @@ flutter:
     - assets/images/onboarding1.png
     - assets/images/onboarding2.png
     - assets/images/onboarding3.png
-
+    - assets/logos/logo.png
   fonts:
     - family: Roboto
       fonts:

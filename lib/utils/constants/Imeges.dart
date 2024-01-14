@@ -1,7 +1,7 @@
 class Images {
   Images._();
 
-  static const appLogo = "";
+  static const appLogo = "assets/logos/logo.png";
 
   //onBoarding Images
   static const onBoardingImage1 = 'assets/images/onboarding1.png';

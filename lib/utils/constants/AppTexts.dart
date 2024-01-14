@@ -13,8 +13,15 @@ class AppText
   static const onBoardingSubTitle3="From our DoorStep to your";
 
   //Login
+  static const login="login";
+  static const signIn="create account";
+
   static const loginTitle="Choose your product";
   static const loginTitle2="Choose your product";
+  static const email="enter your email";
+  static const password="enter your password";
+  static const rememberMy="remember my";
+  static const forgetPassword="forget Password ?";
 
 
 
