@@ -15,7 +15,7 @@ class AppText
   //Login
   static const login="login";
   static const signIn="create account";
-
+  static const orSignWith="or sign with";
   static const loginTitle="Choose your product";
   static const loginTitle2="Choose your product";
   static const email="enter your email";
