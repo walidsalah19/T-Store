@@ -24,5 +24,19 @@ class AppText
   static const forgetPassword="forget Password ?";
 
 
+  //signIn
+  static const signInTitle="Create New Account";
+  static const signInFirstName="First Name";
+  static const signInLastName="Last Name";
+  static const signInUserName="UserName";
+  static const phoneNumber="Phone Number";
+  static const agree="I agree to";
+  static const privacy="Privacy polices";
+
+  static const term="term of use";
+
+
+
+
 
 }

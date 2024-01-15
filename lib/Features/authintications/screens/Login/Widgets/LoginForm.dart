@@ -1,5 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:t_store/Features/authintications/screens/signIn/SignIn.dart';
+import 'package:t_store/utils/Helper/HelperFunction.dart';
 
 import '../../../../../utils/constants/AppTexts.dart';
 import '../../../../../utils/constants/Sizes.dart';
@@ -61,7 +63,9 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: OutlinedButton(
-                onPressed: () {},
+                onPressed: () {
+                  HelperFunction.navigateToScreen(context, SignIn());
+                },
                 child: const Text(AppText.signIn),
               ),
             ),

@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:get/get.dart';
 import 'package:get/get_rx/get_rx.dart';
+import 'package:t_store/Features/authintications/screens/Login/Login.dart';
+
+import '../../../utils/Helper/HelperFunction.dart';
 
 class OnBoardingController extends GetxController {
   static OnBoardingController get instans => Get.find();
@@ -24,8 +27,9 @@ class OnBoardingController extends GetxController {
     }
   }
 
-  void skipPages() {
-    currentPageIndex.value=2;
-    pageController.jumpToPage(2);
+  void skipPages(BuildContext context) {
+   /* currentPageIndex.value=2;
+    pageController.jumpToPage(2);*/
+    HelperFunction.navigateToScreen(context,Login());
   }
 }
