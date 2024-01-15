@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:t_store/Features/authintications/screens/ForgitPassword/ForgitPassword.dart';
 import 'package:t_store/Features/authintications/screens/signIn/SignIn.dart';
 import 'package:t_store/utils/Helper/HelperFunction.dart';
 
@@ -47,7 +48,7 @@ class LoginForm extends StatelessWidget {
                   ],
                 ),
                 TextButton(
-                    onPressed: () {},
+                    onPressed: ()=>Get.to(()=>ForgitPassword()),
                     child: const Text(AppText.forgetPassword))
               ],
             ),

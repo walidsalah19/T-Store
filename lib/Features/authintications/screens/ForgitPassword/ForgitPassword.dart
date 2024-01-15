@@ -1,13 +1,15 @@
+
+
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:t_store/utils/Helper/HelperFunction.dart';
-import 'package:t_store/utils/constants/AppTexts.dart';
-import 'package:t_store/utils/constants/Imeges.dart';
-import 'package:t_store/utils/constants/Sizes.dart';
+import 'package:get/get_core/src/get_main.dart';
 
-import 'Widgets/VerifyEmailHead.dart';
+import '../../../../utils/constants/Sizes.dart';
+import 'Widgets/ForgitPasswordHead.dart';
 
-class VerifyEmail extends StatelessWidget {
+class ForgitPassword extends StatelessWidget
+{
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,15 +26,16 @@ class VerifyEmail extends StatelessWidget {
       body: const SingleChildScrollView(
         child: Padding(
           padding: EdgeInsets.all(AppSizes.defaultSpace),
-          child: VerfiyEmailMainWidget(),
+          child: ForgitPasswordWidget(),
         ),
       ),
     );
   }
+
 }
 
-class VerfiyEmailMainWidget extends StatelessWidget {
-  const VerfiyEmailMainWidget({
+class ForgitPasswordWidget extends StatelessWidget {
+  const ForgitPasswordWidget({
     super.key,
   });
 
@@ -40,7 +43,7 @@ class VerfiyEmailMainWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const VerifyEmailHead(),
+        const ForgitPasswordHead(),
         const SizedBox(
           height: AppSizes.lg,
         ),
@@ -48,7 +51,7 @@ class VerfiyEmailMainWidget extends StatelessWidget {
           width: double.infinity,
           child: ElevatedButton(
             onPressed: () {},
-            child: const Text("Continue"),
+            child: const Text("Done"),
           ),
         ),
         const SizedBox(
@@ -65,4 +68,3 @@ class VerfiyEmailMainWidget extends StatelessWidget {
     );
   }
 }
-
