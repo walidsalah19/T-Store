@@ -1,15 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:t_store/Features/authintications/screens/Login/Login.dart';
 import 'package:t_store/Features/authintications/screens/signIn/widget/SignInDivider.dart';
 import 'package:t_store/Features/authintications/screens/signIn/widget/SignInSocial.dart';
 import 'package:t_store/Features/authintications/screens/signIn/widget/SignInWidget.dart';
 import 'package:t_store/Features/authintications/screens/signIn/widget/privacyWidget.dart';
-import 'package:t_store/utils/constants/AppColors.dart';
 
 import '../../../../utils/Helper/HelperFunction.dart';
 import '../../../../utils/constants/AppTexts.dart';
-import '../../../../utils/constants/Imeges.dart';
 import '../../../../utils/constants/Sizes.dart';
 
 class SignIn extends StatefulWidget {
@@ -59,6 +56,16 @@ class SignInMainWidget extends StatelessWidget {
       const SizedBox(
         height: AppSizes.md,
       ),
+      SizedBox(
+        width: double.infinity,
+        child: ElevatedButton(
+          onPressed: () {},
+          child: const Text(AppText.signIn),
+        ),
+      ),
+      const SizedBox(
+        height: AppSizes.md,
+      ),
       SignInDivider(dark: dark),
       const SizedBox(
         height: AppSizes.md,
@@ -67,4 +74,3 @@ class SignInMainWidget extends StatelessWidget {
     ]);
   }
 }
-
