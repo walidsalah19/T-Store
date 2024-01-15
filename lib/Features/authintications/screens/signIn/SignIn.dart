@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:t_store/Features/authintications/screens/Login/Login.dart';
 import 'package:t_store/Features/authintications/screens/signIn/widget/SignInDivider.dart';
 import 'package:t_store/Features/authintications/screens/signIn/widget/SignInSocial.dart';
@@ -19,21 +20,23 @@ class SignInState extends State<SignIn> {
   Widget build(BuildContext context) {
     bool dart = HelperFunction.isDark(context);
     return Scaffold(
-      appBar: AppBar(
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () {
-            // Add functionality to navigate back or perform any action
-            HelperFunction.navigateToScreen(context, Login());
-          },
-        ),
-      ),
+      appBar: buildAppBar(context),
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: SignInMainWidget(dark: dart),
         ),
       ),
+    );
+  }
+
+  AppBar buildAppBar(BuildContext context) {
+    return AppBar(
+      leading:   IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: ()=>Get.back()
+        ),
+
     );
   }
 }

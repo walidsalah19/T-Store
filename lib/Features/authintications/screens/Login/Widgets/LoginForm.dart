@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:t_store/Features/authintications/screens/signIn/SignIn.dart';
 import 'package:t_store/utils/Helper/HelperFunction.dart';
 
@@ -64,7 +65,8 @@ class LoginForm extends StatelessWidget {
               width: double.infinity,
               child: OutlinedButton(
                 onPressed: () {
-                  HelperFunction.navigateToScreen(context, SignIn());
+                  Get.to(()=>SignIn());
+                 // HelperFunction.navigateToScreen(context, SignIn());
                 },
                 child: const Text(AppText.signIn),
               ),
