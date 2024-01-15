@@ -5,6 +5,8 @@ import 'package:t_store/utils/constants/AppTexts.dart';
 import 'package:t_store/utils/constants/Imeges.dart';
 import 'package:t_store/utils/constants/Sizes.dart';
 
+import 'Widgets/VerifyEmailHead.dart';
+
 class VerifyEmail extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -38,28 +40,7 @@ class VerfiyEmailMainWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image(
-            height: HelperFunction.screenHeight() * .2,
-            width: HelperFunction.screenWidth(),
-            image: const AssetImage(Images.verifyEmail)),
-        Text(
-          AppText.verifyEmail,
-          style: Theme.of(context).textTheme.headlineMedium,
-        ),
-        const SizedBox(
-          height: AppSizes.md,
-        ),
-        Text(
-          AppText.supportEmail,
-          style: Theme.of(context).textTheme.bodyMedium,
-        ),
-        const SizedBox(
-          height: AppSizes.md,
-        ),
-        Text(
-          AppText.congratulation,
-          style: Theme.of(context).textTheme.bodySmall,
-        ),
+        const VerifyEmailHead(),
         const SizedBox(
           height: AppSizes.lg,
         ),
@@ -84,3 +65,4 @@ class VerfiyEmailMainWidget extends StatelessWidget {
     );
   }
 }
+
