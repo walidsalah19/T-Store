@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:t_store/Features/authintications/screens/Login/Login.dart';
+import 'package:t_store/Features/authintications/screens/VerifyEmail/VerifyEmail.dart';
 import 'package:t_store/Features/authintications/screens/signIn/widget/SignInDivider.dart';
 import 'package:t_store/Features/authintications/screens/signIn/widget/SignInSocial.dart';
 import 'package:t_store/Features/authintications/screens/signIn/widget/SignInWidget.dart';
@@ -62,7 +63,7 @@ class SignInMainWidget extends StatelessWidget {
       SizedBox(
         width: double.infinity,
         child: ElevatedButton(
-          onPressed: () {},
+          onPressed: ()=>Get.to(()=> VerifyEmail()),
           child: const Text(AppText.signIn),
         ),
       ),

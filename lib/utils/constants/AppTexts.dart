@@ -36,6 +36,11 @@ class AppText
   static const term="term of use";
 
 
+  //
+static const verifyEmail=" Verify your Email Address ";
+  static const supportEmail="Support@gmail.com ";
+
+  static const congratulation="Congratulation your email send to verify";
 
 
 
