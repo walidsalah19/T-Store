@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:t_store/BottomNavigationMenu.dart';
 import 'package:t_store/Features/authintications/screens/ForgitPassword/ForgitPassword.dart';
 import 'package:t_store/Features/authintications/screens/signIn/SignIn.dart';
 import 'package:t_store/utils/Helper/HelperFunction.dart';
@@ -55,7 +56,7 @@ class LoginForm extends StatelessWidget {
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: () {},
+                onPressed: ()=>Get.to(()=>BottomNavigationMenu()),
                 child: const Text(AppText.login),
               ),
             ),
