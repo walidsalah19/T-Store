@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:t_store/common/CustomShapes/CurvedEdges.dart';
-import 'package:t_store/utils/constants/AppColors.dart';
-
-import 'Wedgit/ClipPathWidget.dart';
-import 'Wedgit/circulContainer.dart';
+import 'Wedgit/HomePageBackground.dart';
 
 class ShopHome extends StatelessWidget {
   @override
@@ -12,7 +8,7 @@ class ShopHome extends StatelessWidget {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            ClipPathWidget(),
+            HomePageBackground(),
           ],
         ),
       ),
