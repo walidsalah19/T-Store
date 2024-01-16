@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:t_store/Features/Shop/Home/ShopHome.dart';
 import 'package:t_store/utils/Helper/HelperFunction.dart';
 
 class BottomNavigationMenu extends StatelessWidget {
@@ -50,9 +51,7 @@ class NavigationMenuSelectedController extends GetxController {
 
   int updateIndex(int ind) => index.value = ind;
   final screens = [
-    Container(
-      color: Colors.orange,
-    ),
+    ShopHome(),
     Container(
       color: Colors.deepPurple,
     ),
