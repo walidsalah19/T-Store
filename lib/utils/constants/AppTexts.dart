@@ -39,7 +39,10 @@ class AppText {
   static const congratulation = "Congratulation your email send to verify";
 
   //reset password
-  static const resetPasswordMs = "We've send you a secure link to change your password and keep your account secure  ";
+  static const resetPasswordMs =
+      "We've send you a secure link to change your password and keep your account secure  ";
   static const resetPassword = "Password Reset Email Send ";
 
+  //appBar
+  static const goodDay = "Good Day for Shopping";
 }

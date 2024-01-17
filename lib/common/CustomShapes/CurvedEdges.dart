@@ -30,9 +30,8 @@ class CurvedEdges extends CustomClipper<Path>
 
   @override
   bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
-
-
-    throw "walid";
+   return false;
   }
 
+  
 }

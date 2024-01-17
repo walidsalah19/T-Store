@@ -6,20 +6,20 @@ import 'circulContainer.dart';
 
 class HomePageBackground extends StatelessWidget {
   const HomePageBackground({
-    super.key,
+    super.key, required this.child,
   });
-
+  final Widget child;
   @override
   Widget build(BuildContext context) {
     return ClipPathWidget(
       child:Container(
         padding: const EdgeInsets.all(0),
         color: AppColorsC.primaryColor,
-        child:  const SizedBox(
+        child:  SizedBox(
           height: 400,
           child: Stack(
             children: [
-              Positioned(
+              const Positioned(
                 top: -150,
                 right: -250,
                 child: circulContainer(
@@ -30,7 +30,7 @@ class HomePageBackground extends StatelessWidget {
                   background: AppColorsC.textWhite,
                 ),
               ),
-              Positioned(
+              const Positioned(
                 top: 100,
                 right: -300,
                 child: circulContainer(
@@ -40,7 +40,8 @@ class HomePageBackground extends StatelessWidget {
                   pading: 0,
                   background: AppColorsC.textWhite,
                 ),
-              )
+              ),
+              child
             ],
           ),
         ),
