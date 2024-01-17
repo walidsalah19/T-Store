@@ -1,12 +1,10 @@
 
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:t_store/Features/authintications/screens/onboarding/OnBoardingScreens.dart';
 import 'package:t_store/utils/themes/AppThemes.dart';
+import 'Features/authintications/screens/onboarding/OnBoardingScreens.dart';
 
-import 'Features/authintications/screens/Login/Login.dart';
 
 class App extends StatelessWidget
 {
@@ -18,7 +16,7 @@ class App extends StatelessWidget
       themeMode:ThemeMode.system,
       theme: AppThemes.lightTheme,
       darkTheme: AppThemes.darkTheme,
-      home:  const OnBoardingScreens()
+      home:  OnBoardingScreens()
     );
   }
 

@@ -4,6 +4,8 @@ import 'package:t_store/Features/Shop/Home/ShopHome.dart';
 import 'package:t_store/utils/Helper/HelperFunction.dart';
 
 class BottomNavigationMenu extends StatelessWidget {
+  const BottomNavigationMenu({super.key});
+
   @override
   Widget build(BuildContext context) {
     final navigationController = Get.put(NavigationMenuSelectedController());
@@ -51,7 +53,7 @@ class NavigationMenuSelectedController extends GetxController {
 
   int updateIndex(int ind) => index.value = ind;
   final screens = [
-    ShopHome(),
+    const ShopHome(),
     Container(
       color: Colors.deepPurple,
     ),

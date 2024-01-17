@@ -8,7 +8,7 @@ import '../../../../../utils/constants/Sizes.dart';
 import '../../../../../utils/device/AppDeviceUtils.dart';
 
 class OnBoardingNavigation extends StatelessWidget {
-  OnBoardingNavigation({
+  const OnBoardingNavigation({
     super.key,
   });
 

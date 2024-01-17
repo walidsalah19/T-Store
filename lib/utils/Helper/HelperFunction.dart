@@ -28,6 +28,7 @@ class HelperFunction{
     } else if (color == "white") {
       return Colors.white;
     }
+    return null;
   }
 
   static void showSnackBar(String message) {
@@ -47,7 +48,7 @@ class HelperFunction{
               onPressed: () {
                 Navigator.of(context).pop();
               },
-              child: Text('Close'),
+              child: const Text('Close'),
             ),
           ],
         );
@@ -63,7 +64,7 @@ class HelperFunction{
     if (text.length <= maxLength) {
       return text;
     } else {
-      return '${text.substring(0, maxLength)}';
+      return text.substring(0, maxLength);
     }
   }
 

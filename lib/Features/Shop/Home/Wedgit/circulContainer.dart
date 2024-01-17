@@ -24,7 +24,7 @@ class circulContainer extends StatelessWidget {
     return Container(
       height: 400,
       width: 400,
-      padding: EdgeInsets.all(0),
+      padding: const EdgeInsets.all(0),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(400),
         color: background.withOpacity(.1),

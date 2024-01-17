@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:t_store/utils/constants/Sizes.dart';
 import 'package:t_store/utils/device/AppDeviceUtils.dart';
 
 class AppBarWidget extends StatelessWidget implements PreferredSize {

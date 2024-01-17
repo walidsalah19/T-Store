@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:t_store/utils/Helper/HelperFunction.dart';
-import 'package:t_store/utils/constants/AppTexts.dart';
-import 'package:t_store/utils/constants/Imeges.dart';
 import 'package:t_store/utils/constants/Sizes.dart';
 
 import 'Widgets/VerifyEmailHead.dart';
 
 class VerifyEmail extends StatelessWidget {
+  const VerifyEmail({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(

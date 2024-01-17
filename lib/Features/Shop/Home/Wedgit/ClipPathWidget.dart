@@ -1,8 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
 import '../../../../common/CustomShapes/CurvedEdges.dart';
-import '../../../../utils/constants/AppColors.dart';
-import 'circulContainer.dart';
 
 class ClipPathWidget extends StatelessWidget {
   const ClipPathWidget({

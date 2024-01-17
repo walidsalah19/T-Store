@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../utils/constants/AppColors.dart';
@@ -38,7 +37,7 @@ class privacyWidget extends StatelessWidget {
           TextSpan(
               text: ' and ', style: Theme.of(context).textTheme.bodySmall),
           TextSpan(
-              text: '${AppText.term}',
+              text: AppText.term,
               style: Theme.of(context).textTheme.bodyMedium!.apply(
                 color: dark
                     ? AppColorsC.primaryColor

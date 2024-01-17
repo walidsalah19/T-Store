@@ -1,10 +1,8 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:t_store/BottomNavigationMenu.dart';
 import 'package:t_store/Features/authintications/screens/ForgitPassword/ForgitPassword.dart';
 import 'package:t_store/Features/authintications/screens/signIn/SignIn.dart';
-import 'package:t_store/utils/Helper/HelperFunction.dart';
 
 import '../../../../../utils/constants/AppTexts.dart';
 import '../../../../../utils/constants/Sizes.dart';
@@ -49,14 +47,14 @@ class LoginForm extends StatelessWidget {
                   ],
                 ),
                 TextButton(
-                    onPressed: ()=>Get.to(()=>ForgitPassword()),
+                    onPressed: ()=>Get.to(()=>const ForgitPassword()),
                     child: const Text(AppText.forgetPassword))
               ],
             ),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: ()=>Get.to(()=>BottomNavigationMenu()),
+                onPressed: ()=>Get.to(()=>const BottomNavigationMenu()),
                 child: const Text(AppText.login),
               ),
             ),
@@ -67,7 +65,7 @@ class LoginForm extends StatelessWidget {
               width: double.infinity,
               child: OutlinedButton(
                 onPressed: () {
-                  Get.to(()=>SignIn());
+                  Get.to(()=>const SignIn());
                  // HelperFunction.navigateToScreen(context, SignIn());
                 },
                 child: const Text(AppText.signIn),

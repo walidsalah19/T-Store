@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:t_store/common/Styles/AppSpacing.dart';
-import 'package:t_store/utils/constants/AppColors.dart';
-import 'package:t_store/utils/constants/AppTexts.dart';
-import 'package:t_store/utils/constants/Imeges.dart';
 import 'package:t_store/utils/constants/Sizes.dart';
 
 import '../../../../utils/Helper/HelperFunction.dart';
@@ -13,6 +9,8 @@ import 'Widgets/LoginSocialButtons.dart';
 import 'Widgets/loginHeader.dart';
 
 class Login extends StatefulWidget {
+  const Login({super.key});
+
   @override
   State<StatefulWidget> createState() => LoginState();
 }
@@ -45,11 +43,11 @@ class loginMainWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        loginHeader(),
+        const loginHeader(),
         const SizedBox(
           height: AppSizes.md,
         ),
-        LoginForm(),
+        const LoginForm(),
         const SizedBox(
           height: AppSizes.lg,
         ),
@@ -57,7 +55,7 @@ class loginMainWidget extends StatelessWidget {
         const SizedBox(
           height: AppSizes.lg,
         ),
-        LoginSocialButtons()
+        const LoginSocialButtons()
       ],
     );
   }

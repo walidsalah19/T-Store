@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:t_store/Features/authintications/screens/Login/Login.dart';
 import 'package:t_store/Features/authintications/screens/VerifyEmail/VerifyEmail.dart';
 import 'package:t_store/Features/authintications/screens/signIn/widget/SignInDivider.dart';
 import 'package:t_store/Features/authintications/screens/signIn/widget/SignInSocial.dart';
@@ -12,6 +11,8 @@ import '../../../../utils/constants/AppTexts.dart';
 import '../../../../utils/constants/Sizes.dart';
 
 class SignIn extends StatefulWidget {
+  const SignIn({super.key});
+
   @override
   State<StatefulWidget> createState() => SignInState();
 }
@@ -55,7 +56,7 @@ class SignInMainWidget extends StatelessWidget {
       const SizedBox(
         height: AppSizes.md,
       ),
-      SignInWidget(),
+      const SignInWidget(),
       privacyWidget(dark: dark),
       const SizedBox(
         height: AppSizes.md,
@@ -63,7 +64,7 @@ class SignInMainWidget extends StatelessWidget {
       SizedBox(
         width: double.infinity,
         child: ElevatedButton(
-          onPressed: ()=>Get.to(()=> VerifyEmail()),
+          onPressed: ()=>Get.to(()=> const VerifyEmail()),
           child: const Text(AppText.signIn),
         ),
       ),
@@ -74,7 +75,7 @@ class SignInMainWidget extends StatelessWidget {
       const SizedBox(
         height: AppSizes.md,
       ),
-      SignInSocial()
+      const SignInSocial()
     ]);
   }
 }

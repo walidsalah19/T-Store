@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:t_store/Features/authintications/controllers/OnBoardingController.dart';
 
@@ -24,7 +23,7 @@ class OnboardingNext extends StatelessWidget {
             OnBoardingController.instans.nextPage();
           },
           style: ElevatedButton.styleFrom(
-              shape: CircleBorder(), backgroundColor: dark ? AppColorsC.light : AppColorsC.dark),
+              shape: const CircleBorder(), backgroundColor: dark ? AppColorsC.light : AppColorsC.dark),
           child: const Icon(Icons.arrow_forward_ios),
         ));
   }

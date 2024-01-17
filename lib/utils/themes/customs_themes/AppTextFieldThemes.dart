@@ -15,19 +15,19 @@ class AppTextFieldThemes
     labelStyle:const TextStyle(color: Colors.black,fontSize: 14),
     hintStyle: const TextStyle(color: Colors.black,fontSize: 14),
 
-    border: OutlineInputBorder().copyWith(
+    border: const OutlineInputBorder().copyWith(
       borderSide:const BorderSide(color: Colors.grey,width: 1),
       borderRadius:BorderRadius.circular(14)
     ),
-    enabledBorder: OutlineInputBorder().copyWith(
+    enabledBorder: const OutlineInputBorder().copyWith(
         borderSide:const BorderSide(color: Colors.grey,width: 1),
         borderRadius:BorderRadius.circular(14)
     ),
-    errorBorder: OutlineInputBorder().copyWith(
+    errorBorder: const OutlineInputBorder().copyWith(
         borderSide:const BorderSide(color: Colors.red,width: 1),
         borderRadius:BorderRadius.circular(14)
     ),
-    focusedBorder: OutlineInputBorder().copyWith(
+    focusedBorder: const OutlineInputBorder().copyWith(
         borderSide:const BorderSide(color: Colors.orangeAccent,width: 1),
         borderRadius:BorderRadius.circular(14)
     ),
@@ -41,19 +41,19 @@ class AppTextFieldThemes
     labelStyle:const TextStyle(color: Colors.white,fontSize: 14),
     hintStyle: const TextStyle(color: Colors.white,fontSize: 14),
 
-    border: OutlineInputBorder().copyWith(
+    border: const OutlineInputBorder().copyWith(
         borderSide:const BorderSide(color: Colors.grey,width: 1),
         borderRadius:BorderRadius.circular(14)
     ),
-    enabledBorder: OutlineInputBorder().copyWith(
+    enabledBorder: const OutlineInputBorder().copyWith(
         borderSide:const BorderSide(color: Colors.grey,width: 1),
         borderRadius:BorderRadius.circular(14)
     ),
-    errorBorder: OutlineInputBorder().copyWith(
+    errorBorder: const OutlineInputBorder().copyWith(
         borderSide:const BorderSide(color: Colors.red,width: 1),
         borderRadius:BorderRadius.circular(14)
     ),
-    focusedBorder: OutlineInputBorder().copyWith(
+    focusedBorder: const OutlineInputBorder().copyWith(
         borderSide:const BorderSide(color: Colors.orangeAccent,width: 1),
         borderRadius:BorderRadius.circular(14)
     ),

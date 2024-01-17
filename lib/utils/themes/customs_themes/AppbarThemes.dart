@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class AppbarThemes {
   AppbarThemes._();
 
-  static final appbarLight = AppBarTheme(
+  static const appbarLight = AppBarTheme(
       elevation: 0,
       centerTitle: false,
       scrolledUnderElevation: 0,
@@ -13,7 +13,7 @@ class AppbarThemes {
       actionsIconTheme: IconThemeData(color: Colors.black, size: 24),
       titleTextStyle: TextStyle(
           color: Colors.black, fontSize: 18, fontWeight: FontWeight.w600));
-  static final appbarDark = AppBarTheme(
+  static const appbarDark = AppBarTheme(
       elevation: 0,
       centerTitle: false,
       scrolledUnderElevation: 0,

@@ -35,9 +35,9 @@ class OnBoardingScreens extends StatelessWidget {
                   subTitle: AppText.onBoardingSubTitle3),
             ],
           ),
-          OnBoardingSkip(),
-          OnBoardingNavigation(),
-          OnboardingNext() // PageController
+          const OnBoardingSkip(),
+          const OnBoardingNavigation(),
+          const OnboardingNext() // PageController
         ],
       ),
     );

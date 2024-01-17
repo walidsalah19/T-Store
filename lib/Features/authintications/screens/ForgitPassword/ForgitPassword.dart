@@ -1,15 +1,15 @@
 
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:get/get_core/src/get_main.dart';
 
 import '../../../../utils/constants/Sizes.dart';
 import 'Widgets/ForgitPasswordHead.dart';
 
 class ForgitPassword extends StatelessWidget
 {
+  const ForgitPassword({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
